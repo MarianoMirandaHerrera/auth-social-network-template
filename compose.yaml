@@ -1,0 +1,6 @@
+services:
+  devcontainer: 
+    image: mcr.microsoft.com/devcontainers/java:3-21-bookworm
+    volumes:
+      - .:/workspaces:cached
+    command: sleep infinity

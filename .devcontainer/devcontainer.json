@@ -1,0 +1,13 @@
+{
+	"name": "auth-social-network-template",
+	"dockerComposeFile": "../compose.yaml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "false"
+		}
+	}
+}
