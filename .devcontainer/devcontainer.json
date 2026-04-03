@@ -2,5 +2,6 @@
 	"name": "auth-social-network-template",
 	"dockerComposeFile": "compose.yaml",
 	"service": "devcontainer",
+	"forwardPorts": [5173],
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }
