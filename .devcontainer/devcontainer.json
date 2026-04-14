@@ -3,5 +3,16 @@
 	"dockerComposeFile": "./../compose.yaml",
 	"service": "devcontainer",
 	"forwardPorts": [5173],
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+	"vscode": {
+		"extensions": [
+		"vscjava.vscode-java-pack",          // Java language support
+		"vscjava.vscode-spring-boot",        // Spring Boot tools
+		"redhat.vscode-xml"                 // XML support for configs
+		]
+	}
+	},
+	"postCreateCommand": "mvn -f backend/pom.xml clean install -DskipTests",
+	"remoteUser": "vscode"
 }
